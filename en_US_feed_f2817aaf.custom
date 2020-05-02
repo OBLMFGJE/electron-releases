@@ -1,0 +1,233 @@
+(function(){
+
+var datas = [{ 
+'headline': "How\x20Fast\x20Is\x20Earth\x20Moving\x3F", 
+'img_path':"http://www.space.com/images/i/000/056/985/original/one-year-on-earth.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA1Ni85ODUvb3JpZ2luYWwvb25lLXllYXItb24tZWFydGguanBn" ,
+'url': "http://www.space.com/33527-how-fast-is-earth-moving.html",
+'score':"458",
+'publish_date':"Sat, 23 Jun 2018 01:57:00 +0000"
+},{ 
+'headline': "Baikonur\x20Cosmodrome\x3A\x20Russian\x20Launch\x20Complex", 
+'img_path':"http://www.space.com/images/i/000/019/867/original/russia-soyuz-fg-launch.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAxOS84Njcvb3JpZ2luYWwvcnVzc2lhLXNveXV6LWZnLWxhdW5jaC5qcGc=" ,
+'url': "http://www.space.com/33947-baikonur-cosmodrome.html",
+'score':"391",
+'publish_date':"Sat, 16 Jun 2018 04:32:00 +0000"
+},{ 
+'headline': "Mars\x20Curiosity\x3A\x20Facts\x20and\x20Information", 
+'img_path':"http://www.space.com/images/i/000/007/679/original/curiosity-mars-rover.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAwNy82Nzkvb3JpZ2luYWwvY3VyaW9zaXR5LW1hcnMtcm92ZXIuanBn" ,
+'url': "http://www.space.com/17963-mars-curiosity.html",
+'score':"184",
+'publish_date':"Tue, 17 Jul 2018 22:39:00 +0000"
+},{ 
+'headline': "Blastoff\x21\x20How\x20to\x20See\x20a\x20Rocket\x20Launch\x20In\x20Person\x20This\x20Summer", 
+'img_path':"http://www.space.com/images/i/000/055/019/original/spacex-falcon-9-cape-canaveral-launch.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA1NS8wMTkvb3JpZ2luYWwvc3BhY2V4LWZhbGNvbi05LWNhcGUtY2FuYXZlcmFsLWxhdW5jaC5qcGc=" ,
+'url': "http://www.space.com/32683-see-a-rocket-launch-in-person.html",
+'score':"182",
+'publish_date':"Tue, 22 May 2018 19:58:00 +0000"
+},{ 
+'headline': "Latest\x20News\x20About\x20the\x20Juno\x20Mission\x20to\x20Jupiter", 
+'img_path':"http://www.space.com/images/i/000/055/893/original/juno-jupiter-orbit.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA1NS84OTMvb3JpZ2luYWwvanVuby1qdXBpdGVyLW9yYml0LmpwZw==" ,
+'url': "http://www.space.com/topics/nasa-juno-jupiter-mission-news",
+'score':"176",
+'publish_date':"Sun, 03 Jun 2018 14:53:00 +0000"
+},{ 
+'headline': "How\x20Big\x20is\x20Jupiter\x3F", 
+'img_path':"http://www.space.com/images/i/000/023/447/original/solarsys_scale.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAyMy80NDcvb3JpZ2luYWwvc29sYXJzeXNfc2NhbGUuanBn" ,
+'url': "http://www.space.com/18392-how-big-is-jupiter.html",
+'score':"163",
+'publish_date':"Fri, 20 Jul 2018 14:21:00 +0000"
+},{ 
+'headline': "World\u2019s\x20First\x20Commercial\x20Airline\x20\x7C\x20The\x20Greatest\x20Moments\x20in\x20Flight", 
+'img_path':"http://www.space.com/images/i/000/019/662/original/first-airline.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAxOS82NjIvb3JpZ2luYWwvZmlyc3QtYWlybGluZS5qcGc=" ,
+'url': "http://www.space.com/16657-worlds-first-commercial-airline-the-greatest-moments-in-flight.html",
+'score':"160",
+'publish_date':"Tue, 22 May 2018 18:30:00 +0000"
+},{ 
+'headline': "NASA\x27s\x20Moonwalking\x20Apollo\x20Astronauts\x3A\x20Where\x20Are\x20They\x20Now\x3F", 
+'img_path':"http://www.space.com/images/i/000/020/941/original/neil-armstrong-apollo-11-lem.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAyMC85NDEvb3JpZ2luYWwvbmVpbC1hcm1zdHJvbmctYXBvbGxvLTExLWxlbS5qcGc=" ,
+'url': "http://www.space.com/17317-nasa-apollo-moon-astronauts.html",
+'score':"112",
+'publish_date':"Mon, 28 May 2018 20:25:00 +0000"
+},{ 
+'headline': "Women\x20in\x20Space\x3A\x20A\x20Gallery\x20of\x20Firsts", 
+'img_path':"http://www.space.com/images/i/000/009/586/original/most-women-in-space-1.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAwOS81ODYvb3JpZ2luYWwvbW9zdC13b21lbi1pbi1zcGFjZS0xLmpwZw==" ,
+'url': "http://www.space.com/16143-women-space-firsts-gallery.html",
+'score':"78",
+'publish_date':"Sun, 22 Jul 2018 11:56:00 +0000"
+},{ 
+'headline': "NASA\x20Centers\x20to\x20Visit\x20for\x20an\x20Out\x20of\x20This\x20World\x20Vacation", 
+'img_path':"http://www.space.com/images/i/000/055/622/original/Kennedy-space-center.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA1NS82MjIvb3JpZ2luYWwvS2VubmVkeS1zcGFjZS1jZW50ZXIuanBn" ,
+'url': "http://www.space.com/32951-visit-a-nasa-center.html",
+'score':"74",
+'publish_date':"Fri, 13 Jul 2018 17:42:00 +0000"
+},{ 
+'headline': "NASA\x27s\x20James\x20Webb\x20Space\x20Telescope\x3A\x20Hubble\x27s\x20Cosmic\x20Successor", 
+'img_path':"http://www.space.com/images/i/000/029/854/original/jwst-galaxy-illustration.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAyOS84NTQvb3JpZ2luYWwvandzdC1nYWxheHktaWxsdXN0cmF0aW9uLmpwZw==" ,
+'url': "http://www.space.com/21925-james-webb-space-telescope-jwst.html",
+'score':"50",
+'publish_date':"Tue, 17 Jul 2018 20:25:00 +0000"
+},{ 
+'headline': "Vesta\x3A\x20Facts\x20About\x20the\x20Brightest\x20Asteroid", 
+'img_path':"http://www.space.com/images/i/000/012/204/original/Vesta-3d.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAxMi8yMDQvb3JpZ2luYWwvVmVzdGEtM2QuanBn" ,
+'url': "http://www.space.com/12097-vesta-asteroid-facts-solar-system.html",
+'score':"49",
+'publish_date':"Tue, 29 May 2018 20:05:00 +0000"
+},{ 
+'headline': "5\x20Great\x20Summer\x20Vacation\x20Ideas\x20for\x20Space\x20Lovers", 
+'img_path':"http://www.space.com/images/i/000/077/388/original/night-sky-cacti-arizona.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA3Ny8zODgvb3JpZ2luYWwvbmlnaHQtc2t5LWNhY3RpLWFyaXpvbmEuanBn" ,
+'url': "http://www.space.com/32796-best-vacations-for-space-lovers.html",
+'score':"41",
+'publish_date':"Thu, 28 Jun 2018 20:06:00 +0000"
+},{ 
+'headline': "Ceres\x3A\x20The\x20Smallest\x20and\x20Closest\x20Dwarf\x20Planet\x20", 
+'img_path':"http://www.space.com/images/i/000/054/070/original/dwarf-planet-ceres-bright-spots-art.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA1NC8wNzAvb3JpZ2luYWwvZHdhcmYtcGxhbmV0LWNlcmVzLWJyaWdodC1zcG90cy1hcnQuanBn" ,
+'url': "http://www.space.com/22891-ceres-dwarf-planet.html",
+'score':"39",
+'publish_date':"Wed, 23 May 2018 03:24:00 +0000"
+},{ 
+'headline': "Skylab\x3A\x20First\x20U.S.\x20Space\x20Station", 
+'img_path':"http://www.space.com/images/i/000/025/746/original/skylab-earth-limb.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAyNS83NDYvb3JpZ2luYWwvc2t5bGFiLWVhcnRoLWxpbWIuanBn" ,
+'url': "http://www.space.com/19607-skylab.html",
+'score':"31",
+'publish_date':"Wed, 11 Jul 2018 01:35:00 +0000"
+},{ 
+'headline': "7\x20Far\x2DOut\x20Summer\x20Vacation\x20Ideas\x20for\x20Science\x20Fiction\x20Fans", 
+'img_path':"http://www.space.com/images/i/000/055/467/original/star-trek-retire-voyage-home-image.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA1NS80Njcvb3JpZ2luYWwvc3Rhci10cmVrLXJldGlyZS12b3lhZ2UtaG9tZS1pbWFnZS5qcGc=" ,
+'url': "http://www.space.com/32883-best-summer-vacations-for-science-fiction-lovers.html",
+'score':"29",
+'publish_date':"Fri, 13 Jul 2018 19:55:00 +0000"
+},{ 
+'headline': "CubeSats\x3A\x20Tiny\x20Payloads,\x20Huge\x20Benefits\x20for\x20Space\x20Research", 
+'img_path':"http://www.space.com/images/i/000/045/149/original/planet-dove-flock-1-satellites.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA0NS8xNDkvb3JpZ2luYWwvcGxhbmV0LWRvdmUtZmxvY2stMS1zYXRlbGxpdGVzLmpwZw==" ,
+'url': "http://www.space.com/34324-cubesats.html",
+'score':"21",
+'publish_date':"Tue, 19 Jun 2018 05:20:00 +0000"
+},{ 
+'headline': "Chandra\x20Space\x20Telescope\x3A\x20Revealing\x20the\x20Invisible\x20Universe", 
+'img_path':"http://www.space.com/images/i/000/020/610/original/chandra-x-ray-telescope-art.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAyMC82MTAvb3JpZ2luYWwvY2hhbmRyYS14LXJheS10ZWxlc2NvcGUtYXJ0LmpwZw==" ,
+'url': "http://www.space.com/18669-chandra-x-ray-observatory.html",
+'score':"18",
+'publish_date':"Sat, 16 Jun 2018 04:20:00 +0000"
+},{ 
+'headline': "Juno\x3A\x20Taking\x20a\x20Long\x20Look\x20at\x20Jupiter", 
+'img_path':"http://www.space.com/images/i/000/053/058/original/juno-jupiter-artist-concept.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA1My8wNTgvb3JpZ2luYWwvanVuby1qdXBpdGVyLWFydGlzdC1jb25jZXB0LmpwZw==" ,
+'url': "http://www.space.com/32742-juno-spacecraft.html",
+'score':"18",
+'publish_date':"Sat, 21 Jul 2018 00:16:00 +0000"
+},{ 
+'headline': "MAVEN\x3A\x20NASA\x27s\x20Orbiter\x20Mission\x20to\x20Mars\x20\u2014\x20Mission\x20Details", 
+'img_path':"http://www.space.com/images/i/000/032/188/original/MAVEN-orbit-full1.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAzMi8xODgvb3JpZ2luYWwvTUFWRU4tb3JiaXQtZnVsbDEuanBn" ,
+'url': "http://www.space.com/23617-nasa-maven-mars-mission.html",
+'score':"16",
+'publish_date':"Thu, 19 Jul 2018 23:00:00 +0000"
+},{ 
+'headline': "Solar\x20Dynamics\x20Observatory\x3A\x20Staring\x20at\x20the\x20Sun", 
+'img_path':"http://www.space.com/images/i/000/031/098/original/sdo-detailed.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAzMS8wOTgvb3JpZ2luYWwvc2RvLWRldGFpbGVkLmpwZw==" ,
+'url': "http://www.space.com/22081-solar-dynamics-observatory.html",
+'score':"8",
+'publish_date':"Fri, 13 Jul 2018 00:43:00 +0000"
+},{ 
+'headline': "Star\x20Trek\x3A\x20History\x20\x26\x20Effect\x20on\x20Space\x20Technology", 
+'img_path':"http://www.space.com/images/i/000/048/460/original/starship-enterprise-nasm-model-edit.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA0OC80NjAvb3JpZ2luYWwvc3RhcnNoaXAtZW50ZXJwcmlzZS1uYXNtLW1vZGVsLWVkaXQuanBn" ,
+'url': "http://www.space.com/31802-star-trek-space-tech.html",
+'score':"4",
+'publish_date':"Thu, 12 Jul 2018 00:56:00 +0000"
+},{ 
+'headline': "Mars\x20Reconnaissance\x20Orbiter\x3A\x20Mapping\x20Mars\x20in\x20High\x20Definition", 
+'img_path':"http://www.space.com/images/i/000/000/821/original/h_mro_polar_02.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAwMC84MjEvb3JpZ2luYWwvaF9tcm9fcG9sYXJfMDIuanBn" ,
+'url': "http://www.space.com/18320-mars-reconnaissance-orbiter.html",
+'score':"3",
+'publish_date':"Sat, 21 Jul 2018 00:28:00 +0000"
+},{ 
+'headline': "Holidays\x20in\x20Space\x3A\x20An\x20Astronaut\x20Photo\x20Album", 
+'img_path':"http://www.space.com/images/i/000/067/472/original/whitson-fischer-independence-day-1.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA2Ny80NzIvb3JpZ2luYWwvd2hpdHNvbi1maXNjaGVyLWluZGVwZW5kZW5jZS1kYXktMS5qcGc=" ,
+'url': "http://www.space.com/13809-photos-space-holidays-astronauts-christmas.html",
+'score':"3",
+'publish_date':"Fri, 25 May 2018 16:50:00 +0000"
+},{ 
+'headline': "Jupiter\x27s\x20Great\x20Red\x20Spot\x3A\x20Photos\x20of\x20the\x20Solar\x20System\x27s\x20Biggest\x20Storm\x20", 
+'img_path':"http://www.space.com/images/i/000/039/445/original/great-red-spot-hubble-1024.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAzOS80NDUvb3JpZ2luYWwvZ3JlYXQtcmVkLXNwb3QtaHViYmxlLTEwMjQuanBn" ,
+'url': "http://www.space.com/25892-jupiter-great-red-spot-photos.html",
+'score':"3",
+'publish_date':"Tue, 22 May 2018 16:00:00 +0000"
+},{ 
+'headline': "Alan\x20Bean\x3A\x20From\x20Astronaut\x20to\x20Artist", 
+'img_path':"http://www.space.com/images/i/000/027/751/original/alan_bean.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAyNy83NTEvb3JpZ2luYWwvYWxhbl9iZWFuLmpwZw==" ,
+'url': "http://www.space.com/20518-alan-bean-astronaut-biography.html",
+'score':"2",
+'publish_date':"Sat, 26 May 2018 19:01:00 +0000"
+},{ 
+'headline': "Asteroid\x20Defense\x3A\x20Scanning\x20the\x20Sky\x20for\x20Threats\x20From\x20Space", 
+'img_path':"http://www.space.com/images/i/000/056/574/original/potential-hazardous-asteroids-crop.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA1Ni81NzQvb3JpZ2luYWwvcG90ZW50aWFsLWhhemFyZG91cy1hc3Rlcm9pZHMtY3JvcC5qcGc=" ,
+'url': "http://www.space.com/33576-asteroid-defense.html",
+'score':"2",
+'publish_date':"Tue, 19 Jun 2018 05:32:00 +0000"
+},{ 
+'headline': "Amazon\x20Prime\x20Day\x202018\x3A\x20The\x20Best\x20Space\x20Deals\x20to\x20Watch", 
+'img_path':"http://www.space.com/images/i/000/077/788/original/bushnell-falcon-wide-angle-binocular.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA3Ny83ODgvb3JpZ2luYWwvYnVzaG5lbGwtZmFsY29uLXdpZGUtYW5nbGUtYmlub2N1bGFyLmpwZw==" ,
+'url': "http://www.space.com/37437-amazon-prime-day-space-deals.html",
+'score':"1",
+'publish_date':"Wed, 18 Jul 2018 02:30:00 +0000"
+},{ 
+'headline': "Comets\x3A\x20News\x20on\x20Sightings,\x20Missions\x20and\x20Encounters", 
+'img_path':"http://www.space.com/images/i/000/042/885/original/zsd5yybn-1412946109.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA0Mi84ODUvb3JpZ2luYWwvenNkNXl5Ym4tMTQxMjk0NjEwOS5qcGc=" ,
+'url': "http://www.space.com/topics/comets",
+'score':"",
+'publish_date':"Tue, 19 Jun 2018 17:00:00 +0000"
+},{ 
+'headline': "Latest\x20News\x20About\x20Uranus,\x20Seventh\x20Planet\x20from\x20the\x20Sun", 
+'img_path':"http://www.space.com/images/i/000/012/553/original/uranus-rings-sideways-multiple-impacts-620.jpg",
+'thumbnail' : "https://img.purch.com/rc/107x73/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAxMi81NTMvb3JpZ2luYWwvdXJhbnVzLXJpbmdzLXNpZGV3YXlzLW11bHRpcGxlLWltcGFjdHMtNjIwLmpwZw==" ,
+'url': "http://www.space.com/topics/uranus-planet-news",
+'score':"",
+'publish_date':"Tue, 19 Jun 2018 16:30:00 +0000"
+}];
+
+var html = '<div id="most-popular-purch"><div class="most-popular mod pure-u-1 nointelliTXT"><h3 class="h2 mod-hdr">Most Popular</h3><ol>';
+var nb = 0;
+datas.forEach(function(data){
+	if(nb <5 && window.location.href.indexOf(data.url) === -1 && data.url.indexOf('space.com') !== -1 && data.img_path && data.headline){
+		var thumbnail = data.thumbnail;
+		html += '<li><a href="'+data.url+'" data-mod="Purch"><img src="'+thumbnail+'" data-src="'+thumbnail+'"><p>'+data.headline+'</p></a></li>';
+ nb++;
+	}
+	
+});
+
+html+= '</ol></div></div>';
+var mpr = document.querySelector('#most-popular-render');
+if(mpr){
+ mpr.style.display = "none";
+ mpr.insertAdjacentHTML('afterend', html);
+} 
+
+})();
